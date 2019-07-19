@@ -28,5 +28,5 @@ rpart.plot(arbol, type = 4, extra = 103)
 #plot(dtm)
 #text(dtm)
 
-prediccion_1 <- predict(dtm, newdata = Data_Test, type = "class")
+prediccion_1 <- predict(arbol, newdata = Data_Test, type = "class")
 confusionMatrix(prediccion_1, Data_Test[["NotaFinal"]])
