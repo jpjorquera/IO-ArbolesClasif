@@ -10,7 +10,7 @@ set.seed(581)
 
 Data <- read.csv(file="./DatosInforme19.csv", header=TRUE, sep=";")
 
-#Data$VTR <- as.factor(Data$VTR)
+#Data$VTR <- as.numeric(Data$VTR)
 Data$VTR <- factor(Data$VTR, levels=c(0:2), ordered=TRUE)
 #Data$TiempoLibre <- as.factor(Data$TiempoLibre)
 Data$TiempoLibre <- factor(Data$TiempoLibre, levels=c("Nada", "Poco", "Normal", "Mucho", "Demasiado"), ordered=TRUE)
